@@ -11,7 +11,9 @@ const client = new Client({
 client.on('ready', () => {
   console.log(`✅ بوت التتبع شغال: ${client.user.tag}`);
 });
-
+'589857259362713654');
+    if (!guild) return;
+    const channel = guild.channels.cache.get('1246606351552217158')
 client.on('voiceStateUpdate', async (oldState, newState) => {
   const userId = newState.member?.id || oldState.member?.id;
   if (!userId) return;
