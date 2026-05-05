@@ -10,7 +10,7 @@ const client = new Client({
   ]
 });
 
-client.on('ready', () => {
+client.on('clientReady', () => {
   console.log(`✅ بوت التتبع شغال: ${client.user.tag}`);
 });
 
